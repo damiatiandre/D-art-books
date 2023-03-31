@@ -59,6 +59,7 @@
 
 .descrição__texto {
     font-size: 14px;
+    line-height: 1.2em;
 }
 
 .botões__item {
@@ -71,6 +72,41 @@
     color: var(--branco);
     font-weight: 700;
     text-decoration: none;
+}
+
+.descrição__imagem {
+    width: 170px;
+    height: 180px;
+    padding-right: 20px;
+}
+
+.autor_imagem {
+    width: 150px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 400px) {
+    .autor_imagem {
+        width: 150px;
+        padding-right: 10px;
+        padding-left: 30px;
+        padding-top: 50px;
+    }
+
+    .descrição__texto {
+        font-size: 12px;
+        line-height: 1em;
+        text-align: start;
+        padding-bottom: 10px;
+    }
+
+    .descrição__titulo {
+        padding-top: 10px;
+    }
+
+    .descrição__texto, .descrição__titulo-livro {
+        padding-right: 20px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
